@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/device_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5998DC"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+
+    <TextView
+        android:id="@+id/tvNameRoomDv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Room Name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/device_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameRoomDv"
+
+        android:background="@drawable/hoanghon"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/btnAddDv"
+        android:layout_width="80dp"
+        android:layout_height="73dp"
+        android:layout_above="@+id/rcvDevice"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="-465dp"
+        android:src="@drawable/baseline_add_home_24"
+        android:text="Add Device"
+        app:backgroundTint="#C2185B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnRemoveDv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="60dp"-->
+<!--        android:layout_marginBottom="73dp"-->
+<!--        android:src="@drawable/baseline_mini_24"-->
+<!--        android:text="Remove Device"-->
+<!--        app:backgroundTint="#2196F3" />-->
+
+</RelativeLayout>
